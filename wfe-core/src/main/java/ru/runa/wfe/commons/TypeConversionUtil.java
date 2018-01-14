@@ -232,7 +232,7 @@ public class TypeConversionUtil {
         } else if (value instanceof List) {
             return ((List<?>) value).size();
         } else {
-            throw new RuntimeException("Unsupported array type " + value.getClass());
+        	return 1;
         }
     }
 
